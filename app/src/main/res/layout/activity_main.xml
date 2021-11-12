@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,12 +13,15 @@
         android:layout_height="wrap_content"
         android:text="Nama"
         />
+
     <EditText
+        android:id="@+id/namaEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:hint="Isi nama anda"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,7 +43,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
-
         />
     <TextView
         android:layout_width="wrap_content"
@@ -51,18 +53,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
-
         />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jarak"
+        android:text="Jarak (km)"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Isi jarak (km)"
         />
 
     <LinearLayout
@@ -72,23 +72,22 @@
         android:gravity="end"
         >
         <Button
+            android:id="@+id/simpanButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/success"
             android:text="Simpan"
             android:layout_marginEnd="10dp"
             android:drawableLeft="@drawable/ic_baseline_save_24"
+
             />
         <Button
+            android:id="@+id/batalButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/danger"
             android:text="Batal"
             android:drawableLeft="@drawable/ic_baseline_cancel_24"
             />
-
-
     </LinearLayout>
-
-
 </LinearLayout>
