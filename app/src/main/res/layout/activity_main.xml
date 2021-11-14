@@ -28,7 +28,9 @@
         android:text="@string/email"
         android:hint="@string/isi_dengan_email_yang_valid"
         />
+
     <EditText
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
@@ -39,7 +41,9 @@
         android:layout_height="wrap_content"
         android:text="@string/no_handpone"
         />
+
     <EditText
+        android:id="@+id/noHandphoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone"
@@ -49,17 +53,22 @@
         android:layout_height="wrap_content"
         android:text="@string/tanggal_lahir"
         />
+
     <EditText
+        android:id="@+id/tanggalLahirEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
         />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/jarak_km"
         />
+
     <EditText
+        android:id="@+id/jarakEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
